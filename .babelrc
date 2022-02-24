@@ -1,3 +1,8 @@
 {
-  "presets": ["@babel/preset-env"] // this goes and finds the best kind of translations for legacy browsers
+  "presets": [
+    [
+      "@babel/preset-env", // this goes and finds the best kind of translations for legacy browsers
+      { "debug": true, "useBuiltIns": "usage", "corejs": "3.8" }
+    ]
+  ]
 }
